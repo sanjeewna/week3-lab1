@@ -1,19 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Contact Us</title>
+  <title><%= title %></title>
   <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-  <header>
-    <h1>Contact Us</h1>
-  </header>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+  <%- include('partials/header') %>
+  <%- include('partials/nav') %>
   <section>
     <h2>Contact Information</h2>
     <address>
@@ -33,8 +26,6 @@
       <input type="submit" value="Submit">
     </form>
   </section>
-  <footer>
-    <p>&copy; 2023 Your Website</p>
-  </footer>
+  <%- include('partials/footer') %>
 </body>
 </html>
